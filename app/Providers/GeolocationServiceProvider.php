@@ -3,8 +3,8 @@
 namespace App\Providers;
 
 use App\Services\Geolocation\Geolocation;
-use App\Services\Map\Map;
-use App\Services\Satellite\Satellite;
+use App\Services\Geolocation\Map\Map;
+use App\Services\Geolocation\Satellite\Satellite;
 use Illuminate\Support\ServiceProvider;
 
 class GeolocationServiceProvider extends ServiceProvider

@@ -1,5 +1,5 @@
 <?php
-namespace App\Services\Map;
+namespace App\Services\Geolocation\Map;
 
 
 class Map{

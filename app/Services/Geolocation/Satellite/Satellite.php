@@ -1,5 +1,5 @@
 <?php
-namespace App\Services\Satellite;
+namespace App\Services\Geolocation\Satellite;
 
 
 class Satellite{
