@@ -1,5 +1,37 @@
 
+## docker mysql server access:
+```
+<!-- migration command using sail -->
+/vendor/bin/sail down && /vendor/bin/sail up -d
+/vendor/bin/sail artisan migrate
 
+<!-- login inside docker mysql -->
+docker exec -it <container id> bash 
+
+> mysql -u <username(root)> -p
+> password : password 
+> show  databases;
+> use docker_laravel(db name)
+> show tables
+
+<!-- restart all docker container -->
+docker restart $(docker ps -q)
+
+<!-- show all docker container** -->
+#docker ps -a`
+
+<!-- kill local sql server  -->
+ps aux | grep mysql
+sudo kill PID
+
+    or 
+sudo systemctl stop mysql 
+
+
+<!-- kill local redis -->
+sudo systemctl stop redis
+
+```
 ## Facade
 
 1. Facade allows us to call Service Instance method **statically**, providing us a convenient way to call Service method
