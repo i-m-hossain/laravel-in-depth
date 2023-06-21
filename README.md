@@ -1,3 +1,10 @@
+## SEEDS and Fatories:
+
+## Database migration:
+
+1. Migration is a concept of version control for database
+2. Laravel will run migration files in chronological order ,i.e. by following the timestamp in the migration file name
+3. The artisan console is a wonderful tool to generate boilerplate for our project
 
 ## docker mysql server access:
 ```
