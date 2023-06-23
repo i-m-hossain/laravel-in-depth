@@ -11,15 +11,21 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
 class Post extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        "title", "body"
+    ];
     protected $casts=[
         'body'=>'array'
+    ];
+    protected $appends=[
+        'title_upper_case'
     ];
     protected function titleUpperCase():Attribute{
         return Attribute::make(
             get: fn()=> strtoupper($this->title)
         );
     }
-    protected function title():Attribute{
+    protected function titleLowerCase():Attribute{
         return Attribute::make(
             set:fn($value)=> $this->attributes['title'] = strtolower($value)
         );
