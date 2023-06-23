@@ -1,13 +1,19 @@
+## Laravel api routes best practices
+1. Route group can help us to effectively organise our API routes
+2. We can either use the array syntax or the method syntax to define a route group.
+3. We can add URL prefix, route name prefix(name, as) , namespace and middleware to a route group
+4. The where() method is useful to add matchng constraint to URL params.
+
 ## Controllers:
 
 1. Controller is a function that runs when a HTTP request hits a route
 2. We can delegate our route controllers into a dedicated Laravel Controller class.
 3. There are 5 main methods in a controller class:
-    . Index - displays a list of resources
-    . Store - creates a new resources
-    . Show - display a specific resources
-    . Update- updates a specific resources
-    . Destroy - deletes a specific resources
+    - Index - displays a list of resources
+    - Store - creates a new resources
+    - Show - display a specific resources
+    - Update- updates a specific resources
+    - Destroy - deletes a specific resources
 4. The resource/apiResources route helper method enables us to easily define API routes
 
 

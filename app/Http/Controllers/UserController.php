@@ -48,4 +48,6 @@ class UserController extends Controller
         $user1 = User::find($user); // Find the user record with ID 1
         $user1->delete(); // Delete the user
     }
+
+
 }
