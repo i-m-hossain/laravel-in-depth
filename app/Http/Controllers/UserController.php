@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StorePostRequest;
-use App\Http\Requests\UpdatePostRequest;
-use App\Models\Post;
+use App\Models\User;
+use Illuminate\Http\Request;
 
-class PostController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,13 +13,13 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return User::all();
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorePostRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -28,15 +27,15 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Post $post)
+    public function show(User $user)
     {
-        //
+        return ['data'=>$user];
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePostRequest $request, Post $post)
+    public function update(Request $request, User $user)
     {
         //
     }
@@ -44,8 +43,9 @@ class PostController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Post $post)
+    public function destroy(User $user)
     {
-        //
+        $user1 = User::find($user); // Find the user record with ID 1
+        $user1->delete(); // Delete the user
     }
 }
