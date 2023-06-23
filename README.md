@@ -1,4 +1,10 @@
+## Recursively load PHP files in a directory
+
+1. Iterator is an object that allows us to iterate through a series of items
+2. The directory iterator can help us to automatically load our routes in a folder
+
 ## Laravel api routes best practices
+
 1. Route group can help us to effectively organise our API routes
 2. We can either use the array syntax or the method syntax to define a route group.
 3. We can add URL prefix, route name prefix(name, as) , namespace and middleware to a route group
