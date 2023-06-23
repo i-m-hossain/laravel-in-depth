@@ -1,5 +1,28 @@
+## Seeding relationships
+
+1. Laravel offers us factory helper functions like 
+has() and for() to quickly generate relations for our models
+2. We can use the sync method to generate many to many relation records(pivot table)
+
+## Model:
+
+Key topics in model:
+1. Accessor(getter)
+2. Mutator (setter)
+3. Relationship
+4. Casting
+
+**Takeaways**
+1. We use hasMany() and belongsTo() methods to define one to many relationship
+2. BelongsToMany() is used to define many to many relationship. We use attach(), detach(), toggle(), and sync() to associate relations.
+3.Accessors and mutators transform values when we retrieve/set model attributes.
+4. Casting is used to cast a datatype to another while retrieving data i.e. cast to array automatically save as json and retrieve as an array. 
+
 ## SEEDS and Fatories:
 
+1. Seeding is referred to populating the database with dummy data
+2. Factory classes are used to generate fake models
+3. We can use the db:seed Artisan command to trigger the seeders
 ## Database migration:
 
 1. Migration is a concept of version control for database
