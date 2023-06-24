@@ -1,7 +1,10 @@
+## Repository pattern
+
+
+
 ## Pagination 
 
 1. *Pagination* is the notion of displaying our query results by page, otherwise we would have to send everything to the client
-
 2. We call the `paginate()` method on our query to create  a paginator. We can then pass the paginator to our resource collection for a paginated JSON response.
 ## Laravel Resource Class | API Resource
 
@@ -140,9 +143,9 @@ sudo systemctl stop redis
 
 1. Service Providers are classes that instruct Laravel on how to instantiate a service/class
 
-2. The **register()** method is where define our class binding
+2. The `register()` method is where define our class binding
 
-3. The **boot()** method is called after all services are registered.
+3. The `boot()` method is called after all services are registered.
 
 4. We need to put our Service Provider in the **provider** array in the app config file to activate it. Otherwise Laravel will automatically resolve the Service on its own using the **Automatic Resolution** feature
 
