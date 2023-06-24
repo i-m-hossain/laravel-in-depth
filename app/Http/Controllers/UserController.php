@@ -2,28 +2,28 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\UserResource;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\ResourceCollection;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * @return JsonResponse
+     * @return ResourceCollection
      */
     public function index()
     {
         $users =  User::query()->get();
-        return new JsonResponse([
-            'data'=>$users
-        ]);
+        return UserResource::collection($users);
     }
 
     /**
      * Store a newly created resource in storage.
-     * @return JsonResponse
+     * @return UserResource
      */
     public function store(Request $request)
     {
@@ -32,25 +32,21 @@ class UserController extends Controller
             'email'=> $request->email,
             'password'=> Hash::make($request->password)
         ]);
-        return new JsonResponse([
-            'data'=> $createdUser
-        ]);
+        return new UserResource($createdUser);
     }
 
     /**
      * Display the specified resource.
-     * @return JsonResponse
+     * @return UserResource
      */
     public function show(User $user)
     {
-        return new JsonResponse([
-            'data'=>$user
-        ]);
+        return new UserResource($user);
     }
 
     /**
      * Update the specified resource in storage.
-     * @return JsonResponse
+     * @return UserResource | JsonResponse
      */
     public function update(Request $request, User $user)
     {
@@ -66,9 +62,7 @@ class UserController extends Controller
                 ]
             ], 400);
         }
-        return new JsonResponse([
-            "data"=>$user
-        ]);
+        return new UserResource($user);
     }
 
     /**

@@ -1,4 +1,11 @@
 
+
+
+## Database transaction
+
+1. *Database transaction* groups multiple database together and only applies the operations **when all of them passed**. It will **rollback any changes** if one of the operations failed.
+
+2. We use the **transaction()** method in the *DB facade* to trigger a transaction
 ## Essential eloquent methods and properties
 
 1. Larvel's ORM - Eloquent provides an easy API for us to work with database
