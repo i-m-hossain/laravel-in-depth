@@ -1,41 +1,50 @@
+## Pagination 
 
+1. *Pagination* is the notion of displaying our query results by page, otherwise we would have to send everything to the client
 
+2. We call the `paginate()` method on our query to create  a paginator. We can then pass the paginator to our resource collection for a paginated JSON response.
+## Laravel Resource Class | API Resource
+
+1. Resource class help us to manage our **API JSON** response in one place
+2. It makes our API response to be more consistent and maintainable
+3. We can use the command below to generate resource boilerplate
+`php artisan make:resource ReourceName`
 
 ## Database transaction
 
 1. *Database transaction* groups multiple database together and only applies the operations **when all of them passed**. It will **rollback any changes** if one of the operations failed.
 
-2. We use the **transaction()** method in the *DB facade* to trigger a transaction
+2. We use the `transaction()` method in the `DB facade` to trigger a transaction
 ## Essential eloquent methods and properties
 
 1. Larvel's ORM - Eloquent provides an easy API for us to work with database
-2. We use the *query()* method to start a database query , *get()* to retrieve records, *find()* to find by id, *create()* to insert record, *update()* to update and *delete()* to delete
-3. Laravel protects the model fields from *mass assignment*  by default. To enable mass assignment, we will need to define the *$fillable* or *$guarded* property in the model.
-4. *$hidden* will hide model fields when we convert the model into an array. and *$append* will add extra fields to the array from the accessor method. 
+2. We use the `query()` method to start a database query , `get()` to retrieve records, `find()` to find by id, `create()` to insert record, `update()` to update and `delete()` to delete
+3. Laravel protects the model fields from *mass assignment*  by default. To enable mass assignment, we will need to define the `$fillable` or `$guarded` property in the model.
+4. `$hidden` will hide model fields when we convert the model into an array. and `$append` will add extra fields to the array from the accessor method. 
 
 ## Recursively load PHP files in a directory
 
-1. *Iterator* is an object that allows us to iterate through a series of items
-2. The *directory iterator* can help us to automatically load our routes in a folder
+1. **Iterator** is an object that allows us to iterate through a series of items
+2. The **directory iterator** can help us to automatically load our routes in a folder
 
 ## Laravel api routes best practices
 
 1. Route group can help us to effectively organise our API routes
 2. We can either use the *array syntax* or the *method syntax* to define a route group.
-3. We can add *URL prefix*, *route name prefix*(name, as) , *namespace* and *middleware* to a route group
-4. The *where()* method is useful to add matchng constraint to URL params.
+3. We can add `URL prefix`, `route name prefix (name, as)` , `namespace` and `middleware` to a route group
+4. The `where()` method is useful to add matching constraint to URL params.
 
 ## Controllers:
 
 1. Controller is a function that runs when a HTTP request hits a route
 2. We can delegate our route controllers into a dedicated Laravel Controller class.
 3. There are 5 main methods in a controller class:
-    - *Index* - displays a list of resources
-    - *Store* - creates a new resources
-    - *Show* - display a specific resources
-    - *Update*- updates a specific resources
-    - *Destroy* - deletes a specific resources
-4. The r*esource/apiResources* route helper method enables us to easily define API routes
+    - `Index`- displays a list of resources
+    - `Store` - creates a new resources
+    - `Show` - display a specific resources
+    - `Update`- updates a specific resources
+    - `Destroy` - deletes a specific resources
+4. The *resource/apiResources* route helper method enables us to easily define API routes
 
 
 
@@ -52,15 +61,15 @@ Architectural constraints: Rest defines *6 architectural constraints* which make
 
 **Takeaways:**
 1. Api routes typically refers to routes that return Json, while web routes are routes that return HTML pages
-2. We define API routes in the *api.php* file, and web routes in *web.php*
-3. Laravel uses the *substitute bindings middleware* to automagically load model instance to the controller 
+2. We define API routes in the `api.php` file, and web routes in `web.php`
+3. Laravel uses the `substitute bindings middleware` to automagically load model instance to the controller 
 
 
 ## Seeding relationships
 
 1. Laravel offers us factory helper functions like 
-*has()* and *for()* to quickly generate relations for our models
-2. We can use the *sync* method to generate many to many relation records **(pivot table)**
+`has()` and `for()` to quickly generate relations for our models
+2. We can use the `sync` method to generate many to many relation records **(pivot table)**
 
 ## Model:
 
@@ -71,16 +80,16 @@ Key topics in model:
 4. Casting
 
 **Takeaways**
-1. We use *hasMany()* and *belongsTo()* methods to define *one to many relationship*
-2. *BelongsToMany()* is used to define *many to many* relationship. We use *attach()*, *detach()*, *toggle()*, and *sync()* to associate relations.
-3. *Accessors* and *mutators* transform values when we retrieve/set model attributes.
-4. *Casting* is used to cast a datatype to another while retrieving data i.e. cast to array automatically save as json and retrieve as an array. 
+1. We use `hasMany()` and `belongsTo()` methods to define `one to many relationship`
+2. `BelongsToMany()` is used to define `many to many` relationship. We use `attach()`, `detach()`, `toggle()`, and `sync()` to associate relations.
+3. `Accessors` and `mutators` transform values when we retrieve/set model attributes.
+4. `Casting` is used to cast a datatype to another while retrieving data i.e. cast to array automatically save as json and retrieve as an array. 
 
 ## SEEDS and Fatories:
 
-1. *Seeding* is referred to populating the database with dummy data
+1. `Seeding` is referred to populating the database with dummy data
 2. Factory classes are used to generate fake models
-3. We can use the *db:seed* Artisan command to trigger the seeders
+3. We can use the `db:seed` Artisan command to trigger the seeders
 ## Database migration:
 
 1. Migration is a concept of version control for database
@@ -139,7 +148,7 @@ sudo systemctl stop redis
 
 ##  Middleware and Http Kernel:
 1. Middleware are functions that run before the request hits the router
-2. The **handle()** method contains the main logic of the middleware, while the terminate() method contains the **clean up** logic just before the app is shut down.
+2. The `handle()` method contains the main logic of the middleware, while the `terminate()` method contains the **clean up** logic just before the app is shut down.
 
 3. The Kernel is responsible to pass the request to the router through middleware.
 
@@ -158,7 +167,7 @@ sudo systemctl stop redis
 
 3. The app needs to bind a service to the container before resolving it from the container
 
-4. Singleton service can only have 1 instance
+4. **Singleton service** can only have 1 instance
 
-5. Kernel is the core of an app that does all the heavy work for us
+5. **Kernel** is the core of an app that does all the heavy work for us
 

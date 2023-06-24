@@ -17,9 +17,10 @@ class PostController extends Controller
      * Display a listing of the resource.
      * @return ResourceCollection
      */
-    public function index()
+    public function index(Request $request)
     {
-        $posts = Post::query()->get();
+        $pageSize = $request->page_size ?? 10;
+        $posts = Post::query()->paginate($pageSize);
         return PostResource::collection($posts);
     }
 

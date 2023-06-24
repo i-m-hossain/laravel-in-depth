@@ -15,9 +15,10 @@ class UserController extends Controller
      * Display a listing of the resource.
      * @return ResourceCollection
      */
-    public function index()
+    public function index(Request $request)
     {
-        $users =  User::query()->get();
+        $pageSize = $request->page_size ?? 10;
+        $users =  User::query()->paginate($pageSize);
         return UserResource::collection($users);
     }
 
@@ -27,10 +28,10 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $createdUser= User::query()->create([
-            'name'=> $request->name,
-            'email'=> $request->email,
-            'password'=> Hash::make($request->password)
+        $createdUser = User::query()->create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password)
         ]);
         return new UserResource($createdUser);
     }
@@ -51,13 +52,13 @@ class UserController extends Controller
     public function update(Request $request, User $user)
     {
         $updated = $user->update([
-            "name" => $request->name?? $user->name,
-            "email" => $request->email?? $user->email,
-            "password" => Hash::make($request-> password )?? $user->password
+            "name" => $request->name ?? $user->name,
+            "email" => $request->email ?? $user->email,
+            "password" => Hash::make($request->password) ?? $user->password
         ]);
-        if(!$updated){
+        if (!$updated) {
             return new JsonResponse([
-                'errors'=>[
+                'errors' => [
                     "failed to update user"
                 ]
             ], 400);
@@ -72,15 +73,15 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $deleted = $user->forceDelete();
-        if(!$deleted){
+        if (!$deleted) {
             return new JsonResponse([
-                "errors"=>[
+                "errors" => [
                     "failed to delete user"
                 ]
             ], 400);
         }
         return new JsonResponse([
-            "data"=> "user is successfully deleted"
+            "data" => "user is successfully deleted"
         ]);
     }
 }
