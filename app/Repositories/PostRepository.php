@@ -2,9 +2,7 @@
 
 namespace App\Repositories;
 
-use App\Http\Resources\PostResource;
 use App\Models\Post;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
 
 class PostRepository extends BaseRepository

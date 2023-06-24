@@ -1,6 +1,9 @@
+
 ## Repository pattern
 
-
+1. Repository is a class that takes care of model operations
+2. Repository manages model operations in one place and improves the maintainability of our app
+3. The common methods present in all repository can be implemented by an abstract base class, this way we can enforce the methods must be implemented
 
 ## Pagination 
 
