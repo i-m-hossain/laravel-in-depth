@@ -1,5 +1,9 @@
 
-
+## Event & event listener & subscriber
+- `Event listeners` are classes /functions that get executed when an event is dispatched
+- We define our `Event` - `Event Listener` mapping in the `Event Service Provider`
+- `Event Subscriber` is a class that let us to group our **event listener mapping** in one place.
+- We register `Subscribers` in the $subscribe property from the Event Service provider.
 ## Exception
 
 1. Creating custom exception classes in our app can *ensure consistent* API response for error handling
