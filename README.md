@@ -1,4 +1,12 @@
 
+
+## Exception
+
+1. Creating custom exception classes in our app can *ensure consistent* API response for error handling
+2. The `report()` method is responsible for reporting or logging the exception.
+3. The `render()` method is responsible to send the error back to the HTTP client.
+4. The `abort()` helper function is a quick way to send back an error response.
+5. The `report()` helper function call the report method in the specified exception class.
 ## Repository pattern
 
 1. Repository is a class that takes care of model operations
