@@ -1,4 +1,9 @@
-
+## Email 
+command to generate an email:
+`php artisan make:mail WelcomeMail`
+Additional configuration in mail template:
+`php artisan vendor:publish`
+-
 ## Event & event listener & subscriber
 - `Event listeners` are classes /functions that get executed when an event is dispatched
 - We define our `Event` - `Event Listener` mapping in the `Event Service Provider`
