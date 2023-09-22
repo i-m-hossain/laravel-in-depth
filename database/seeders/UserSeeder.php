@@ -17,9 +17,9 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->disableForeignKeys();
+        // $this->disableForeignKeys();
         $this->truncate('users');
         User::factory(10)->create();
-        $this->enableForeignKeys();
+        // $this->enableForeignKeys();
     }
 }

@@ -1,3 +1,8 @@
+
+
+
+## Testing:
+
 ## Email 
 command to generate an email:
 `php artisan make:mail WelcomeMail`

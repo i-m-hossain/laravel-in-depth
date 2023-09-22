@@ -19,7 +19,7 @@ class PostRepository extends BaseRepository
         try {
             return DB::transaction(function () use ($attributes) {
                 $created = Post::query()->create([
-                    'titl' => data_get($attributes, "title", 'Untitled'),
+                    'title' => data_get($attributes, "title", 'Untitled'),
                     'body' => data_get($attributes, 'body')
                 ]);
                 // pivot table syncing
