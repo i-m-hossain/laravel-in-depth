@@ -1,3 +1,7 @@
+## Validation
+- We can define `Request class` to validate easily incoming HTTP requests.
+- We inject `Request class` in controller methods to get Laravel to perform validation requests
+- We can create `custom validation` rule either by `closure` or a `dedicated Rule class`
 
 ## TDD(Test driven development):
 - `Test driven development(TDD)` is the idea of writing test first and write the code later
