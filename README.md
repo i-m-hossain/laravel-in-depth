@@ -1,5 +1,7 @@
 
-
+## TDD(Test driven development):
+- `Test driven development(TDD)` is the idea of writing test first and write the code later
+- In standard TDD, we would write the bare minimum code to pass our test and refactor our code as we progress to the advanced tests.
 
 ## Testing(Feature tests):
 

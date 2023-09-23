@@ -45,7 +45,12 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ]
+        ],
+        "playground": [
+            "ls",
+            "echo 'hello'"
+        ],
+        "test": "./vendor/bin/phpunit"
     },
     "extra": {
         "laravel": {
