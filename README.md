@@ -1,8 +1,11 @@
 
 
 
-## Testing:
+## Testing(Feature tests):
 
+- Providing the '-filter' flag to PHP unit allows us to run a specific test
+- Event::fake() stops events from dispatching in our app and allows us to capture and assert event dispatching
+- The json() method allows us to easily perform HTTP requests to our API endpoints
 ## Email 
 command to generate an email:
 `php artisan make:mail WelcomeMail`

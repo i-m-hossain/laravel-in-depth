@@ -23,7 +23,7 @@ class PostRepositoryTest extends TestCase
             'body'=> []
         ];
         //4. compare the result
-       $result =  $repository->create($payload);
+        $result =  $repository->create($payload);
         $this->assertSame($payload['title'], $result-> title, "Post created doesn't have the same title");
 
     }
