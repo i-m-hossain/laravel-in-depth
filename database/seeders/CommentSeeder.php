@@ -17,9 +17,9 @@ class CommentSeeder extends Seeder
     public function run(): void
     {
 
-        $this->disableForeignKeys();
+        // $this->disableForeignKeys();
         $this->truncate('comments');
         Comment::factory(10)->create();
-        $this->enableForeignKeys();
+        // $this->enableForeignKeys();
     }
 }

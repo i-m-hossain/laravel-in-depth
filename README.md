@@ -1,3 +1,17 @@
+## Validation
+- We can define `Request class` to validate easily incoming HTTP requests.
+- We inject `Request class` in controller methods to get Laravel to perform validation requests
+- We can create `custom validation` rule either by `closure` or a `dedicated Rule class`
+
+## TDD(Test driven development):
+- `Test driven development(TDD)` is the idea of writing test first and write the code later
+- In standard TDD, we would write the bare minimum code to pass our test and refactor our code as we progress to the advanced tests.
+
+## Testing(Feature tests):
+
+- Providing the '-filter' flag to PHP unit allows us to run a specific test
+- Event::fake() stops events from dispatching in our app and allows us to capture and assert event dispatching
+- The json() method allows us to easily perform HTTP requests to our API endpoints
 ## Email 
 command to generate an email:
 `php artisan make:mail WelcomeMail`

@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Exceptions\GeneralJsonException;
-use App\Http\Requests\StorePostRequest;
-use App\Http\Requests\UpdatePostRequest;
+use App\Http\Requests\PostStoreRequest;
 use App\Http\Resources\PostResource;
 use App\Models\Post;
 use App\Repositories\PostRepository;
@@ -28,16 +26,17 @@ class PostController extends Controller
 
     /**
      * Store a newly created resource in storage.
+     * @param PostStoreRequest $request
      * @return PostResource
      */
-    public function store(Request $request, PostRepository $repository)
+    public function store(PostStoreRequest $request, PostRepository $repository)
     {
-        $attributes = [
-            "title" => $request->title,
-            "body" => $request->body,
-            "user_ids" => $request->user_ids
-        ];
-        $created = $repository->create($attributes);
+
+        $created = $repository->create($request->only([
+            'title',
+            'body',
+            'user_ids'
+        ]));
         return new PostResource($created);
     }
 
@@ -57,7 +56,9 @@ class PostController extends Controller
     public function update(Request $request, Post $post, PostRepository $repository)
     {
         $post = $repository->update($post, $request->only([
-            'title', 'body', 'user_ids'
+            'title',
+            'body',
+            'user_ids'
         ]));
         return new PostResource($post);
     }

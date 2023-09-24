@@ -17,7 +17,7 @@ class PostSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->disableForeignKeys();
+        // $this->disableForeignKeys();
         $this->truncate('posts');
         $posts =Post::factory(10)
             ->overrideTitleWithUntitled()
@@ -25,6 +25,6 @@ class PostSeeder extends Seeder
         $posts->each(function(Post $post){
             $post->users()->sync(FactoryHelper::getRandomModelId(User::class));
         });
-        $this->enableForeignKeys();
+        // $this->enableForeignKeys();
     }
 }
