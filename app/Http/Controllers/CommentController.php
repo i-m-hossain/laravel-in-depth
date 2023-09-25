@@ -10,6 +10,11 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
+/**
+ * @group Comment management
+ * 
+ * Api's to handle comment resource
+ */
 class CommentController extends Controller
 {
     /**

@@ -1,4 +1,18 @@
-## Validation
+## Generating api docs with scribe
+-
+## Config
+- `config()` is a handy helper function to access configuration values from the config folder
+- We use the `.(dot) notation` to access the configuration
+- `env()` is a helper function to access the environment variable
+## Laravel IDE helper
+- Laravel uses a lot of facades and magic methods that are not IDE friendly
+- The IDE helper package solves this issue by generating an 'ide_helper.php' file to aid the autocompletion
+
+## Custom validation with validator
+- Validator is an alternative way to validate input data other than using the Request class
+- Validator has the benefit of providing us a lot of helper functions to work with validation
+
+## Validating Request
 - We can define `Request class` to validate easily incoming HTTP requests.
 - We inject `Request class` in controller methods to get Laravel to perform validation requests
 - We can create `custom validation` rule either by `closure` or a `dedicated Rule class`
@@ -12,6 +26,15 @@
 - Providing the '-filter' flag to PHP unit allows us to run a specific test
 - Event::fake() stops events from dispatching in our app and allows us to capture and assert event dispatching
 - The json() method allows us to easily perform HTTP requests to our API endpoints
+
+## PHP Unit test vs Feature test vs E2E test
+
+- Unit testing is the notion of the testing the smallest units/building block in our app i.e. functions. If the building blocks are working, then the app should work(not necessarily true always)
+
+- Feature testing focuses on the feature and outcome rather than the individual functions, It is more reliable that unit testing but slower
+
+- End to End testing mocks the end users behaviour and has the highest reliability. However, E2E is very hard to implement and very slow
+
 ## Email 
 command to generate an email:
 `php artisan make:mail WelcomeMail`

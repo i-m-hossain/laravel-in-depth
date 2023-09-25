@@ -10,19 +10,25 @@ use App\Repositories\UserRepository;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
+/**
 
-
+ * @group User management
+ * 
+ * Api's to manage the user resource
+ */
 class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
+     * @queryParam page_size int Size per page. defaults to 10 example:20
+     * @queryParam page int defaults to 20 example:
      * @return ResourceCollection
      */
     public function index(Request $request)
     {
         // event(new UserCreated(User::factory()->make()));
-        $pageSize = $request->page_size ?? 10;
-        $users =  User::query()->paginate($pageSize);
+        $page_size = $request->page_size ?? 10;
+        $users =  User::query()->paginate($page_size);
         return UserResource::collection($users);
     }
 

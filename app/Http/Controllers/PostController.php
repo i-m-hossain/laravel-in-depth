@@ -10,7 +10,11 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
-
+/**
+ * @group Post management
+ * 
+ * Api's to handle post resource
+ */
 class PostController extends Controller
 {
     /**
