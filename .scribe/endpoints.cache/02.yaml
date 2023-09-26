@@ -28,37 +28,32 @@ endpoints:
     queryParameters:
       page_size:
         name: page_size
-        description: 'Size per page. defaults to 10 example:20'
+        description: 'Size per page. defaults to 10.'
         required: false
-        example: 15
+        example: 10
         type: integer
         enumValues: []
         custom: []
       page:
         name: page
-        description: 'defaults to 20 example: 1'
+        description: 'page to view. defaults to 1.'
         required: false
-        example: 19
+        example: 1
         type: integer
         enumValues: []
         custom: []
     cleanQueryParameters:
-      page_size: 15
-      page: 19
+      page_size: 10
+      page: 1
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":[],"links":{"first":"http:\/\/localhost\/api\/v1\/users?page=1","last":"http:\/\/localhost\/api\/v1\/users?page=1","prev":"http:\/\/localhost\/api\/v1\/users?page=18","next":null},"meta":{"current_page":19,"from":null,"last_page":1,"links":[{"url":"http:\/\/localhost\/api\/v1\/users?page=18","label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/api\/v1\/users?page=1","label":"1","active":false},{"url":null,"label":"Next &raquo;","active":false}],"path":"http:\/\/localhost\/api\/v1\/users","per_page":15,"to":null,"total":10}}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '55'
-          access-control-allow-origin: '*'
-        description: null
+        content: '{"data":[{"id":11,"name":"Mariam Schmeler","email":"schamberger.christiana@example.org","emailVerifiedAt":"2023-09-26T09:25:34.000000Z","createdAt":"2023-09-26T09:25:34.000000Z","updatedAt":"2023-09-26T09:25:34.000000Z"},{"id":12,"name":"Coleman Cartwright","email":"weimann.bethel@example.com","emailVerifiedAt":"2023-09-26T09:25:34.000000Z","createdAt":"2023-09-26T09:25:34.000000Z","updatedAt":"2023-09-26T09:25:34.000000Z"}]}'
+        headers: []
+        description: ''
         custom: []
     responseFields: []
     auth: []
@@ -88,10 +83,43 @@ endpoints:
     cleanUrlParameters: []
     queryParameters: []
     cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Name of the user.'
+        required: true
+        example: 'John Doe'
+        type: string
+        enumValues: []
+        custom: []
+      email:
+        name: email
+        description: 'User Email.'
+        required: true
+        example: johndoe@example.com
+        type: string
+        enumValues: []
+        custom: []
+      password:
+        name: password
+        description: password.
+        required: true
+        example: '?iG"3C5WnUQ}q!.'
+        type: string
+        enumValues: []
+        custom: []
+    cleanBodyParameters:
+      name: 'John Doe'
+      email: johndoe@example.com
+      password: '?iG"3C5WnUQ}q!.'
     fileParameters: []
-    responses: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":11,"name":"Roosevelt Leffler","email":"kallie00@example.com","emailVerifiedAt":"2023-09-26T09:25:34.000000Z","createdAt":"2023-09-26T09:25:34.000000Z","updatedAt":"2023-09-26T09:25:34.000000Z"},{"id":12,"name":"Myrtie Kirlin","email":"salvatore69@example.com","emailVerifiedAt":"2023-09-26T09:25:34.000000Z","createdAt":"2023-09-26T09:25:34.000000Z","updatedAt":"2023-09-26T09:25:34.000000Z"}]}'
+        headers: []
+        description: ''
+        custom: []
     responseFields: []
     auth: []
     controller: null
@@ -119,7 +147,7 @@ endpoints:
     urlParameters:
       id:
         name: id
-        description: 'The ID of the user.'
+        description: 'User Id.'
         required: true
         example: 1
         type: integer
@@ -135,14 +163,9 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":1,"name":"Jayden Gislason Jr.","email":"jarrell.nitzsche@example.com","emailVerifiedAt":"2023-09-24T14:37:42.000000Z","createdAt":"2023-09-24T14:37:42.000000Z","updatedAt":"2023-09-24T14:37:42.000000Z"}}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '54'
-          access-control-allow-origin: '*'
-        description: null
+        content: '{"data":[{"id":11,"name":"Jarrett Cummerata","email":"lesly.bailey@example.net","emailVerifiedAt":"2023-09-26T09:25:34.000000Z","createdAt":"2023-09-26T09:25:34.000000Z","updatedAt":"2023-09-26T09:25:34.000000Z"},{"id":12,"name":"Dana Johns II","email":"xzavier.wisozk@example.org","emailVerifiedAt":"2023-09-26T09:25:34.000000Z","createdAt":"2023-09-26T09:25:34.000000Z","updatedAt":"2023-09-26T09:25:34.000000Z"}]}'
+        headers: []
+        description: ''
         custom: []
     responseFields: []
     auth: []
@@ -181,10 +204,43 @@ endpoints:
       id: 1
     queryParameters: []
     cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Name of the user.'
+        required: true
+        example: 'John Doe'
+        type: string
+        enumValues: []
+        custom: []
+      email:
+        name: email
+        description: 'User Email.'
+        required: true
+        example: johndoe@example.com
+        type: string
+        enumValues: []
+        custom: []
+      password:
+        name: password
+        description: password.
+        required: true
+        example: ';(@5a5sw!z#0m4[u\_s'
+        type: string
+        enumValues: []
+        custom: []
+    cleanBodyParameters:
+      name: 'John Doe'
+      email: johndoe@example.com
+      password: ';(@5a5sw!z#0m4[u\_s'
     fileParameters: []
-    responses: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":11,"name":"Pauline Abernathy","email":"brekke.grady@example.com","emailVerifiedAt":"2023-09-26T09:25:34.000000Z","createdAt":"2023-09-26T09:25:34.000000Z","updatedAt":"2023-09-26T09:25:34.000000Z"},{"id":12,"name":"Mariah Stoltenberg","email":"nikolaus.bonita@example.com","emailVerifiedAt":"2023-09-26T09:25:34.000000Z","createdAt":"2023-09-26T09:25:34.000000Z","updatedAt":"2023-09-26T09:25:34.000000Z"}]}'
+        headers: []
+        description: ''
+        custom: []
     responseFields: []
     auth: []
     controller: null
@@ -225,7 +281,16 @@ endpoints:
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
-    responses: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+           "data": "success"
+          }
+        headers: []
+        description: ''
+        custom: []
     responseFields: []
     auth: []
     controller: null

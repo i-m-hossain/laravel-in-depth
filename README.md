@@ -1,5 +1,6 @@
 ## Generating api docs with scribe
--
+- `Scribe`` is an amazing package that helps us to generate api documentation in a beautiful webpage
+- We use the '@' directive in phpdocs to provide details about our API endpoints
 ## Config
 - `config()` is a handy helper function to access configuration values from the config folder
 - We use the `.(dot) notation` to access the configuration

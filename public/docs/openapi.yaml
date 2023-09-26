@@ -25,73 +25,73 @@ paths:
                     -
                       id: 1
                       body: []
-                      postId: 6
-                      userId: 1
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      postId: 1
+                      userId: 7
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 2
                       body: []
-                      postId: 5
+                      postId: 4
                       userId: 1
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 3
                       body: []
-                      postId: 2
+                      postId: 7
                       userId: 8
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 4
                       body: []
-                      postId: 2
-                      userId: 4
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      postId: 8
+                      userId: 6
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 5
                       body: []
-                      postId: 9
-                      userId: 3
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      postId: 1
+                      userId: 2
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 6
                       body: []
-                      postId: 8
-                      userId: 9
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      postId: 4
+                      userId: 8
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 7
                       body: []
-                      postId: 10
+                      postId: 4
                       userId: 9
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 8
                       body: []
-                      postId: 4
-                      userId: 1
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      postId: 7
+                      userId: 9
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 9
                       body: []
-                      postId: 2
-                      userId: 10
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      postId: 4
+                      userId: 8
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 10
                       body: []
-                      postId: 7
-                      userId: 9
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      postId: 1
+                      userId: 5
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                   links:
                     first: 'http://localhost/api/v1/comments?page=1'
                     last: 'http://localhost/api/v1/comments?page=1'
@@ -125,73 +125,73 @@ paths:
                       -
                         id: 1
                         body: []
-                        postId: 6
-                        userId: 1
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        postId: 1
+                        userId: 7
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 2
                         body: []
-                        postId: 5
+                        postId: 4
                         userId: 1
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 3
                         body: []
-                        postId: 2
+                        postId: 7
                         userId: 8
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 4
                         body: []
-                        postId: 2
-                        userId: 4
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        postId: 8
+                        userId: 6
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 5
                         body: []
-                        postId: 9
-                        userId: 3
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        postId: 1
+                        userId: 2
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 6
                         body: []
-                        postId: 8
-                        userId: 9
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        postId: 4
+                        userId: 8
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 7
                         body: []
-                        postId: 10
+                        postId: 4
                         userId: 9
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 8
                         body: []
-                        postId: 4
-                        userId: 1
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        postId: 7
+                        userId: 9
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 9
                         body: []
-                        postId: 2
-                        userId: 10
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        postId: 4
+                        userId: 8
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 10
                         body: []
-                        postId: 7
-                        userId: 9
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        postId: 1
+                        userId: 5
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                     items:
                       type: object
                       properties:
@@ -203,16 +203,16 @@ paths:
                           example: []
                         postId:
                           type: integer
-                          example: 6
+                          example: 1
                         userId:
                           type: integer
-                          example: 1
+                          example: 7
                         createdAt:
                           type: string
-                          example: '2023-09-24T14:37:42.000000Z'
+                          example: '2023-09-26T09:19:24.000000Z'
                         updatedAt:
                           type: string
-                          example: '2023-09-24T14:37:42.000000Z'
+                          example: '2023-09-26T09:19:24.000000Z'
                   links:
                     type: object
                     properties:
@@ -308,10 +308,10 @@ paths:
                   data:
                     id: 1
                     body: []
-                    postId: 6
-                    userId: 1
-                    createdAt: '2023-09-24T14:37:42.000000Z'
-                    updatedAt: '2023-09-24T14:37:42.000000Z'
+                    postId: 1
+                    userId: 7
+                    createdAt: '2023-09-26T09:19:24.000000Z'
+                    updatedAt: '2023-09-26T09:19:24.000000Z'
                 properties:
                   data:
                     type: object
@@ -324,16 +324,16 @@ paths:
                         example: []
                       postId:
                         type: integer
-                        example: 6
+                        example: 1
                       userId:
                         type: integer
-                        example: 1
+                        example: 7
                       createdAt:
                         type: string
-                        example: '2023-09-24T14:37:42.000000Z'
+                        example: '2023-09-26T09:19:24.000000Z'
                       updatedAt:
                         type: string
-                        example: '2023-09-24T14:37:42.000000Z'
+                        example: '2023-09-26T09:19:24.000000Z'
       tags:
         - 'Comment management'
       security: []
@@ -383,62 +383,62 @@ paths:
                       id: 1
                       title: untitled
                       body: []
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 2
                       title: untitled
                       body: []
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 3
                       title: untitled
                       body: []
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 4
                       title: untitled
                       body: []
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 5
                       title: untitled
                       body: []
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 6
                       title: untitled
                       body: []
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 7
                       title: untitled
                       body: []
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 8
                       title: untitled
                       body: []
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 9
                       title: untitled
                       body: []
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                     -
                       id: 10
                       title: untitled
                       body: []
-                      createdAt: '2023-09-24T14:37:42.000000Z'
-                      updatedAt: '2023-09-24T14:37:42.000000Z'
+                      createdAt: '2023-09-26T09:19:24.000000Z'
+                      updatedAt: '2023-09-26T09:19:24.000000Z'
                   links:
                     first: 'http://localhost/api/v1/posts?page=1'
                     last: 'http://localhost/api/v1/posts?page=1'
@@ -473,62 +473,62 @@ paths:
                         id: 1
                         title: untitled
                         body: []
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 2
                         title: untitled
                         body: []
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 3
                         title: untitled
                         body: []
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 4
                         title: untitled
                         body: []
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 5
                         title: untitled
                         body: []
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 6
                         title: untitled
                         body: []
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 7
                         title: untitled
                         body: []
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 8
                         title: untitled
                         body: []
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 9
                         title: untitled
                         body: []
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                       -
                         id: 10
                         title: untitled
                         body: []
-                        createdAt: '2023-09-24T14:37:42.000000Z'
-                        updatedAt: '2023-09-24T14:37:42.000000Z'
+                        createdAt: '2023-09-26T09:19:24.000000Z'
+                        updatedAt: '2023-09-26T09:19:24.000000Z'
                     items:
                       type: object
                       properties:
@@ -543,10 +543,10 @@ paths:
                           example: []
                         createdAt:
                           type: string
-                          example: '2023-09-24T14:37:42.000000Z'
+                          example: '2023-09-26T09:19:24.000000Z'
                         updatedAt:
                           type: string
-                          example: '2023-09-24T14:37:42.000000Z'
+                          example: '2023-09-26T09:19:24.000000Z'
                   links:
                     type: object
                     properties:
@@ -634,11 +634,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: non
+                  example: vitae
                 body:
                   type: string
                   description: ''
-                  example: laudantium
+                  example: minima
                 user_ids:
                   type: object
                   description: ''
@@ -667,8 +667,8 @@ paths:
                     id: 1
                     title: untitled
                     body: []
-                    createdAt: '2023-09-24T14:37:42.000000Z'
-                    updatedAt: '2023-09-24T14:37:42.000000Z'
+                    createdAt: '2023-09-26T09:19:24.000000Z'
+                    updatedAt: '2023-09-26T09:19:24.000000Z'
                 properties:
                   data:
                     type: object
@@ -684,10 +684,10 @@ paths:
                         example: []
                       createdAt:
                         type: string
-                        example: '2023-09-24T14:37:42.000000Z'
+                        example: '2023-09-26T09:19:24.000000Z'
                       updatedAt:
                         type: string
-                        example: '2023-09-24T14:37:42.000000Z'
+                        example: '2023-09-26T09:19:24.000000Z'
       tags:
         - 'Post management'
       security: []
@@ -727,23 +727,23 @@ paths:
         -
           in: query
           name: page_size
-          description: 'Size per page. defaults to 10 example:20'
-          example: 15
+          description: 'Size per page. defaults to 10.'
+          example: 10
           required: false
           schema:
             type: integer
-            description: 'Size per page. defaults to 10 example:20'
-            example: 15
+            description: 'Size per page. defaults to 10.'
+            example: 10
         -
           in: query
           name: page
-          description: 'defaults to 20 example: 1'
-          example: 19
+          description: 'page to view. defaults to 1.'
+          example: 1
           required: false
           schema:
             type: integer
-            description: 'defaults to 20 example: 1'
-            example: 19
+            description: 'page to view. defaults to 1.'
+            example: 1
       responses:
         200:
           description: ''
@@ -752,103 +752,60 @@ paths:
               schema:
                 type: object
                 example:
-                  data: []
-                  links:
-                    first: 'http://localhost/api/v1/users?page=1'
-                    last: 'http://localhost/api/v1/users?page=1'
-                    prev: 'http://localhost/api/v1/users?page=18'
-                    next: null
-                  meta:
-                    current_page: 19
-                    from: null
-                    last_page: 1
-                    links:
-                      -
-                        url: 'http://localhost/api/v1/users?page=18'
-                        label: '&laquo; Previous'
-                        active: false
-                      -
-                        url: 'http://localhost/api/v1/users?page=1'
-                        label: '1'
-                        active: false
-                      -
-                        url: null
-                        label: 'Next &raquo;'
-                        active: false
-                    path: 'http://localhost/api/v1/users'
-                    per_page: 15
-                    to: null
-                    total: 10
+                  data:
+                    -
+                      id: 11
+                      name: 'Mariam Schmeler'
+                      email: schamberger.christiana@example.org
+                      emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                      createdAt: '2023-09-26T09:25:34.000000Z'
+                      updatedAt: '2023-09-26T09:25:34.000000Z'
+                    -
+                      id: 12
+                      name: 'Coleman Cartwright'
+                      email: weimann.bethel@example.com
+                      emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                      createdAt: '2023-09-26T09:25:34.000000Z'
+                      updatedAt: '2023-09-26T09:25:34.000000Z'
                 properties:
                   data:
                     type: array
-                    example: []
-                  links:
-                    type: object
-                    properties:
-                      first:
-                        type: string
-                        example: 'http://localhost/api/v1/users?page=1'
-                      last:
-                        type: string
-                        example: 'http://localhost/api/v1/users?page=1'
-                      prev:
-                        type: string
-                        example: 'http://localhost/api/v1/users?page=18'
-                      next:
-                        type: string
-                        example: null
-                  meta:
-                    type: object
-                    properties:
-                      current_page:
-                        type: integer
-                        example: 19
-                      from:
-                        type: string
-                        example: null
-                      last_page:
-                        type: integer
-                        example: 1
-                      links:
-                        type: array
-                        example:
-                          -
-                            url: 'http://localhost/api/v1/users?page=18'
-                            label: '&laquo; Previous'
-                            active: false
-                          -
-                            url: 'http://localhost/api/v1/users?page=1'
-                            label: '1'
-                            active: false
-                          -
-                            url: null
-                            label: 'Next &raquo;'
-                            active: false
-                        items:
-                          type: object
-                          properties:
-                            url:
-                              type: string
-                              example: 'http://localhost/api/v1/users?page=18'
-                            label:
-                              type: string
-                              example: '&laquo; Previous'
-                            active:
-                              type: boolean
-                              example: false
-                      path:
-                        type: string
-                        example: 'http://localhost/api/v1/users'
-                      per_page:
-                        type: integer
-                        example: 15
-                      to:
-                        type: string
-                        example: null
-                      total:
-                        type: integer
-                        example: 10
+                    example:
+                      -
+                        id: 11
+                        name: 'Mariam Schmeler'
+                        email: schamberger.christiana@example.org
+                        emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                        createdAt: '2023-09-26T09:25:34.000000Z'
+                        updatedAt: '2023-09-26T09:25:34.000000Z'
+                      -
+                        id: 12
+                        name: 'Coleman Cartwright'
+                        email: weimann.bethel@example.com
+                        emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                        createdAt: '2023-09-26T09:25:34.000000Z'
+                        updatedAt: '2023-09-26T09:25:34.000000Z'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 11
+                        name:
+                          type: string
+                          example: 'Mariam Schmeler'
+                        email:
+                          type: string
+                          example: schamberger.christiana@example.org
+                        emailVerifiedAt:
+                          type: string
+                          example: '2023-09-26T09:25:34.000000Z'
+                        createdAt:
+                          type: string
+                          example: '2023-09-26T09:25:34.000000Z'
+                        updatedAt:
+                          type: string
+                          example: '2023-09-26T09:25:34.000000Z'
       tags:
         - 'User management'
       security: []
@@ -857,9 +814,93 @@ paths:
       operationId: storeANewlyCreatedResourceInStorage
       description: ''
       parameters: []
-      responses: {  }
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    -
+                      id: 11
+                      name: 'Roosevelt Leffler'
+                      email: kallie00@example.com
+                      emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                      createdAt: '2023-09-26T09:25:34.000000Z'
+                      updatedAt: '2023-09-26T09:25:34.000000Z'
+                    -
+                      id: 12
+                      name: 'Myrtie Kirlin'
+                      email: salvatore69@example.com
+                      emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                      createdAt: '2023-09-26T09:25:34.000000Z'
+                      updatedAt: '2023-09-26T09:25:34.000000Z'
+                properties:
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 11
+                        name: 'Roosevelt Leffler'
+                        email: kallie00@example.com
+                        emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                        createdAt: '2023-09-26T09:25:34.000000Z'
+                        updatedAt: '2023-09-26T09:25:34.000000Z'
+                      -
+                        id: 12
+                        name: 'Myrtie Kirlin'
+                        email: salvatore69@example.com
+                        emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                        createdAt: '2023-09-26T09:25:34.000000Z'
+                        updatedAt: '2023-09-26T09:25:34.000000Z'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 11
+                        name:
+                          type: string
+                          example: 'Roosevelt Leffler'
+                        email:
+                          type: string
+                          example: kallie00@example.com
+                        emailVerifiedAt:
+                          type: string
+                          example: '2023-09-26T09:25:34.000000Z'
+                        createdAt:
+                          type: string
+                          example: '2023-09-26T09:25:34.000000Z'
+                        updatedAt:
+                          type: string
+                          example: '2023-09-26T09:25:34.000000Z'
       tags:
         - 'User management'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Name of the user.'
+                  example: 'John Doe'
+                email:
+                  type: string
+                  description: 'User Email.'
+                  example: johndoe@example.com
+                password:
+                  type: string
+                  description: password.
+                  example: '?iG"3C5WnUQ}q!.'
+              required:
+                - name
+                - email
+                - password
       security: []
   '/api/v1/users/{id}':
     get:
@@ -876,34 +917,59 @@ paths:
                 type: object
                 example:
                   data:
-                    id: 1
-                    name: 'Jayden Gislason Jr.'
-                    email: jarrell.nitzsche@example.com
-                    emailVerifiedAt: '2023-09-24T14:37:42.000000Z'
-                    createdAt: '2023-09-24T14:37:42.000000Z'
-                    updatedAt: '2023-09-24T14:37:42.000000Z'
+                    -
+                      id: 11
+                      name: 'Jarrett Cummerata'
+                      email: lesly.bailey@example.net
+                      emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                      createdAt: '2023-09-26T09:25:34.000000Z'
+                      updatedAt: '2023-09-26T09:25:34.000000Z'
+                    -
+                      id: 12
+                      name: 'Dana Johns II'
+                      email: xzavier.wisozk@example.org
+                      emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                      createdAt: '2023-09-26T09:25:34.000000Z'
+                      updatedAt: '2023-09-26T09:25:34.000000Z'
                 properties:
                   data:
-                    type: object
-                    properties:
-                      id:
-                        type: integer
-                        example: 1
-                      name:
-                        type: string
-                        example: 'Jayden Gislason Jr.'
-                      email:
-                        type: string
-                        example: jarrell.nitzsche@example.com
-                      emailVerifiedAt:
-                        type: string
-                        example: '2023-09-24T14:37:42.000000Z'
-                      createdAt:
-                        type: string
-                        example: '2023-09-24T14:37:42.000000Z'
-                      updatedAt:
-                        type: string
-                        example: '2023-09-24T14:37:42.000000Z'
+                    type: array
+                    example:
+                      -
+                        id: 11
+                        name: 'Jarrett Cummerata'
+                        email: lesly.bailey@example.net
+                        emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                        createdAt: '2023-09-26T09:25:34.000000Z'
+                        updatedAt: '2023-09-26T09:25:34.000000Z'
+                      -
+                        id: 12
+                        name: 'Dana Johns II'
+                        email: xzavier.wisozk@example.org
+                        emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                        createdAt: '2023-09-26T09:25:34.000000Z'
+                        updatedAt: '2023-09-26T09:25:34.000000Z'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 11
+                        name:
+                          type: string
+                          example: 'Jarrett Cummerata'
+                        email:
+                          type: string
+                          example: lesly.bailey@example.net
+                        emailVerifiedAt:
+                          type: string
+                          example: '2023-09-26T09:25:34.000000Z'
+                        createdAt:
+                          type: string
+                          example: '2023-09-26T09:25:34.000000Z'
+                        updatedAt:
+                          type: string
+                          example: '2023-09-26T09:25:34.000000Z'
       tags:
         - 'User management'
       security: []
@@ -912,16 +978,112 @@ paths:
       operationId: updateTheSpecifiedResourceInStorage
       description: ''
       parameters: []
-      responses: {  }
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    -
+                      id: 11
+                      name: 'Pauline Abernathy'
+                      email: brekke.grady@example.com
+                      emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                      createdAt: '2023-09-26T09:25:34.000000Z'
+                      updatedAt: '2023-09-26T09:25:34.000000Z'
+                    -
+                      id: 12
+                      name: 'Mariah Stoltenberg'
+                      email: nikolaus.bonita@example.com
+                      emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                      createdAt: '2023-09-26T09:25:34.000000Z'
+                      updatedAt: '2023-09-26T09:25:34.000000Z'
+                properties:
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 11
+                        name: 'Pauline Abernathy'
+                        email: brekke.grady@example.com
+                        emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                        createdAt: '2023-09-26T09:25:34.000000Z'
+                        updatedAt: '2023-09-26T09:25:34.000000Z'
+                      -
+                        id: 12
+                        name: 'Mariah Stoltenberg'
+                        email: nikolaus.bonita@example.com
+                        emailVerifiedAt: '2023-09-26T09:25:34.000000Z'
+                        createdAt: '2023-09-26T09:25:34.000000Z'
+                        updatedAt: '2023-09-26T09:25:34.000000Z'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 11
+                        name:
+                          type: string
+                          example: 'Pauline Abernathy'
+                        email:
+                          type: string
+                          example: brekke.grady@example.com
+                        emailVerifiedAt:
+                          type: string
+                          example: '2023-09-26T09:25:34.000000Z'
+                        createdAt:
+                          type: string
+                          example: '2023-09-26T09:25:34.000000Z'
+                        updatedAt:
+                          type: string
+                          example: '2023-09-26T09:25:34.000000Z'
       tags:
         - 'User management'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Name of the user.'
+                  example: 'John Doe'
+                email:
+                  type: string
+                  description: 'User Email.'
+                  example: johndoe@example.com
+                password:
+                  type: string
+                  description: password.
+                  example: ';(@5a5sw!z#0m4[u\_s'
+              required:
+                - name
+                - email
+                - password
       security: []
     delete:
       summary: 'Remove the specified resource from storage.'
       operationId: removeTheSpecifiedResourceFromStorage
       description: ''
       parameters: []
-      responses: {  }
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data: success
+                properties:
+                  data:
+                    type: string
+                    example: success
       tags:
         - 'User management'
       security: []
@@ -929,7 +1091,7 @@ paths:
       -
         in: path
         name: id
-        description: 'The ID of the user.'
+        description: 'User Id.'
         example: 1
         required: true
         schema:
