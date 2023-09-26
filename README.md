@@ -1,5 +1,11 @@
+## Throttle and Rate limiting
+- `Throttle` means to limit the number of opearations in a given period of time
+- The `throttle middleware` in laravel helps to mitigate the `DOS(Denial of Service)` attacks from malicious user
+- We can define `named rate limiter` in `RouteServiceProvider` Class
+- We can pass in the rate limiting config `directly` to the throttle middleware if we prefer not to use the named Rate Limiter
+
 ## Generating api docs with scribe
-- `Scribe`` is an amazing package that helps us to generate api documentation in a beautiful webpage
+- `Scribe` is an amazing package that helps us to generate api documentation in a beautiful webpage
 - We use the '@' directive in phpdocs to provide details about our API endpoints
 ## Config
 - `config()` is a handy helper function to access configuration values from the config folder
