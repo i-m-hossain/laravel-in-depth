@@ -1,3 +1,8 @@
+## Laravel Fortify: Email Verification
+- Fortify provides us a handy email verification feature to cofirm the user's email address
+- We can use the 'verify' middleware to protect our app's routes.
+- We will need to implement the 'MustVeryfyEmail' interface to our user model for email validation to work.
+
 ## Laravel Fortify: Auth, Registration and password reset
 - Laravel protects all its web routes from CSRF attacks by default
 - We need Laravel Sanctum if we want to protect our api routes from CSRF attacks
