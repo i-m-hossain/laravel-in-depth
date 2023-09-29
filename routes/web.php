@@ -5,6 +5,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 use \Illuminate\Support\Facades\Mail;
+use Laravel\Fortify\RoutePath;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +29,12 @@ if (App::environment('local')) {
             ->send(new WelcomeMail($user));
         return null;
     });
-};
+}
+;
+Route::get(RoutePath::for('password.reset', '/reset-password/{token}'), function ($token) {
+    return view('auth.password-reset',[
+        'token'=>$token
+    ]);
+})
+    ->middleware(['guest:' . config('fortify.guard')])
+    ->name('password.reset');

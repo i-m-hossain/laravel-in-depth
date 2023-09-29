@@ -1,3 +1,20 @@
+## Laravel Fortify: Auth, Registration and password reset
+- Laravel protects all its web routes from CSRF attacks by default
+- We need Laravel Sanctum if we want to protect our api routes from CSRF attacks
+- We can use Fortify Action classes to customize the user registration logic along with other actions
+- Password reset requires a GET route with a route name of 'password.reset' in order to work properly
+
+## Authentication
+- Laravel fortify is a package that takes care o most authentication logic for us.
+- Fortify provides us several features out of the box, namely:
+    1. Registration
+    2. Login 
+    3. Reset password
+    4. Email Verification
+    5. Update Profile Information
+    6. Update Password
+    7. 2 factor authentication
+- Fortify also enables us to rate limit the login routes
 ## Throttle and Rate limiting
 - `Throttle` means to limit the number of opearations in a given period of time
 - The `throttle middleware` in laravel helps to mitigate the `DOS(Denial of Service)` attacks from malicious user
