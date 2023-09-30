@@ -25,7 +25,7 @@ use Laravel\Fortify\RoutePath;
 Route::get('/', function () {
     return view('welcome');
 });
-
+// signed route
 Route::get('/shared/posts/{post}', function(Request $request, Post $post){
     return "Specially made just for you <3 ;) Post id :".$post->id;
 })->name('shared.post')->middleware('signed');

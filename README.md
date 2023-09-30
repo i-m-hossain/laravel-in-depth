@@ -1,3 +1,10 @@
+
+## Notification
+- Laravel provides us a variety of drivers to send out notifications to our users, including mail, database, broadcast, slack and vonage.
+- There are many more community-maintained drivers, eg telegram, discord etc.
+- Php artisan make:notification will generate the boilerplate to create a new notification class.
+- We can use Notification::send() or $notifiable->notify() to send out notification.
+
 ## creating temporary link:
 - We can use `signed routes` to protect our routes from unwanted modification
 - We use `URL::temporarySignedRoute()` to create a link with expiration, while `URL::signRoute` to create a permanent protected link
