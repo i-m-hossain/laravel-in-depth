@@ -97,11 +97,13 @@
 - End to End testing mocks the end users behaviour and has the highest reliability. However, E2E is very hard to implement and very slow
 
 ## Email 
-command to generate an email:
-`php artisan make:mail WelcomeMail`
-Additional configuration in mail template:
-`php artisan vendor:publish`
--
+- command to generate an email:
+    `php artisan make:mail WelcomeMail`
+- Additional configuration in mail template:
+    `php artisan vendor:publish`
+- we need a fake SMTP server
+    - mailtrap.io
+
 ## Event & event listener & subscriber
 - `Event listeners` are classes /functions that get executed when an event is dispatched
 - We define our `Event` - `Event Listener` mapping in the `Event Service Provider`
