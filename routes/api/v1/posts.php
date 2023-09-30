@@ -24,6 +24,7 @@ Route::group([
             Route::get('/{post}', [PostController::class, 'show'])->name('show');
             Route::patch('/{post}', [PostController::class, 'update'])->name('update');
             Route::delete('/{post}', [PostController::class, 'destroy'])->name('destroy');
+            Route::post('/{post}/share', [PostController::class, 'share'])->name('share');
         }
     );
 });

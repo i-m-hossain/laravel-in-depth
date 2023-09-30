@@ -9,6 +9,7 @@ use App\Repositories\PostRepository;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
+use Illuminate\Support\Facades\URL;
 
 /**
  * @group Post management
@@ -76,6 +77,24 @@ class PostController extends Controller
         $post = $repository->forceDelete($post);
         return new JsonResponse([
             'data' => 'success'
+        ]);
+    }
+
+    /**
+     * Share a specified post
+     * @response 200{
+     *      data: 'http://www.example.com/post'
+     * }
+     * @param \App\Models\Post $post
+     * @return JsonResponse
+     */
+    public function share(Request $request, Post $post)
+    {
+        $url = URL::temporarySignedRoute('shared.post', now()->addDays(30),[
+            'post'=>$post->id
+        ]);
+        return new JsonResponse([
+            'data'=>$url
         ]);
     }
 }

@@ -38,7 +38,5 @@ class FortifyServiceProvider extends ServiceProvider
 
             return Limit::perMinute(5)->by($throttleKey);
         });
-
-         
     }
 }

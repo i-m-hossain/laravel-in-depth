@@ -1,3 +1,35 @@
+## creating temporary link:
+- We can use `signed routes` to protect our routes from unwanted modification
+- We use `URL::temporarySignedRoute()` to create a link with expiration, while `URL::signRoute` to create a permanent protected link
+- Laravel uses salted `sha256` to hash the route as a measure to prevent modification
+## I18N:
+- Internationalisation or `i18n` is the notion of providing translation to different locale.
+- We can use the `__()` or `Lang::get()` to retrieve translations from the language file.
+- Laravel puts all the translation files in the `lang directory.`
+- We can choose to write our translation files in either `php or json` file format
+- `trans_choice` is a helper function for to handle pluralization
+## Laravel testing
+- Laravel provides us a convenient `actingAs()` method to login as any given user
+- `setUp()` is a handy special function that runs `before every test function`
+- `teardown()` is the opposite setup(). teardown() runs `after every test function.`
+- actingAs() accepts a `second argument` where we can specify which `auth guard` that we want to use.
+
+## Sanctum
+- Sanctum offers `cookie based` authentication and `token based` authentication
+- Token is simple to setup and use but can be dangerous if it is stolen
+- Cookie is harder to setup, but it will protect our app from `CSRF and XSS attacks`
+- Cookie based authentication is `sensitive to domain names`, be sure to configure Sanctum before
+
+## customizing email verification
+- Laravel fortify relies on the build in `VerifyEmail` class provided by Laravel to send out verification email
+- We call `VerifyEmail::toMailUsing()` to define our own logic to send out the verification notification
+- We can encode information into Laravel's signed route for validation in the future
+
+## 2FA
+- The User model needs to use the `TwoFactorAuthenticatable` trait in order for 2FA work properly
+- The `confirmPassword` option will force the user to confirm their password when setting up 2FA.
+- Laravel will issue the user a new set of recovery codes if they log in via `recovery code`.
+
 ## Laravel Fortify: Email Verification
 - Fortify provides us a handy email verification feature to confirm the user's email address
 - We can use the '`verify`' middleware to protect our app's routes.
