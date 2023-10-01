@@ -1,5 +1,5 @@
 <?php
-
+use App\Events\PlaygroundEvent;
 use App\Mail\WelcomeMail;
 use App\Models\Post;
 use App\Models\User;
@@ -49,10 +49,20 @@ if (App::environment('local')) {
      * 
      * */
     Route::get('/playground', function () {
-        $user = User::factory()->make();
-        Mail::to($user)
-            ->send(new WelcomeMail($user));
+       
+        /**
+         * Web socket event
+         */
+        event(new PlaygroundEvent());
         return null;
+
+        /**
+         * Email sending
+         */
+        // $user = User::factory()->make();
+        // Mail::to($user)
+        //     ->send(new WelcomeMail($user));
+        // return null;
     });
     /** 
      * Temporary route link generation

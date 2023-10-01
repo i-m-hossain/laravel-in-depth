@@ -1,9 +1,32 @@
 
+
+## Broadcasting event and websocket channels:
+- If a client wants to subscribe to a websocket channel in laravel, the client will first perform a `'HTTP handshake'`, i.e. to authenticate the user before establishing a persisted websocket connection
+- Event classes will need to implement the `ShouldBroadcast` interface before Laravel can broadcast them to the websocket
+- We need to configure the `host and port` of the Pusher driver in `broadcasting.php` config file to get laravel to use our self-hosted Laravel Websocket server.
+- By default, Laravel will use the Event FQCN(Fully qualified class name) as the event name. We can customise this by defining `broadcastAs()`.
+- `BroadcastWith()` is a way for us to attach data in the event payload.
+
+
+## WebSocket Broadcasting setup and config:
+- `Pusher, Ably, Laravel Webscokcets, Socketi and Laravel Echo server` are websocket servers that are supported by Laravel
+- Laravel websocket is a wonderful open-source drop in replacement for pusher.
+- Laravel uses the `PubSub websocket pattern` to publish real-time app events.
+- We need to setup a `queue driver` for laravel to broadcast websocket events.
+-The `BroadcastServiceProvider` should be enabled in the app config
+- Laravel Websockets exposed a `debugging dashboard` for our websocket connections
+## Websockets
+- Websocket(WS) is a communication protocol to transmit data between computers, where it is commonly used is realtime apps
+- In contrast to HTTP, `WS persists and maintain its connection with server`, so the subsequent data transmission will be lightning fast
+- There are two common WS app pattersns`PubSub` and `RPC(Remote procedure calls)`
+- `Pubsub involves 1 server` that broadcasts messages to multiple clients. Commonly seen in financial app where there is a need to stream realtime data.
+- RPC is very similar to http where the client will send a request and expects a reply fromo the server. RPC can be used in messaging apps.
+
 ## Notification
-- Laravel provides us a variety of drivers to send out notifications to our users, including mail, database, broadcast, slack and vonage.
+- Laravel provides us a variety of drivers to send out notifications to our users, including `mail, database, broadcast, slack and vonage`.
 - There are many more community-maintained drivers, eg telegram, discord etc.
-- Php artisan make:notification will generate the boilerplate to create a new notification class.
-- We can use Notification::send() or $notifiable->notify() to send out notification.
+- `php artisan make:notification` will generate the boilerplate to create a new notification class.
+- We can use `Notification::send()` or `$notifiable->notify()` to send out notification.
 
 ## creating temporary link:
 - We can use `signed routes` to protect our routes from unwanted modification
