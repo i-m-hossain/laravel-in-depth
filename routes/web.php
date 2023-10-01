@@ -1,5 +1,5 @@
 <?php
-use App\Events\PlaygroundEvent;
+use App\Events\ChatMessageEvent;
 use App\Mail\WelcomeMail;
 use App\Models\Post;
 use App\Models\User;
@@ -49,20 +49,24 @@ if (App::environment('local')) {
      * 
      * */
     Route::get('/playground', function () {
-       
-        /**
-         * Web socket event
-         */
-        event(new PlaygroundEvent());
-        return null;
-
         /**
          * Email sending
          */
-        // $user = User::factory()->make();
-        // Mail::to($user)
-        //     ->send(new WelcomeMail($user));
-        // return null;
+        $user = User::factory()->make();
+        Mail::to($user)
+            ->send(new WelcomeMail($user));
+        return null;
+    });
+
+    /**
+     * web socket route
+     */
+    Route::post('/chat-message', function(Request $request){
+        event(new ChatMessageEvent($request->message));
+        return null;
+    });
+    Route::get('/ws', function(){
+        return view("websocket");
     });
     /** 
      * Temporary route link generation

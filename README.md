@@ -1,4 +1,10 @@
-
+## Laravel Echo & WebSockets 
+-` Echo is the official client JS library` for us to subscribe and reeive websocket events from the server
+- Vite compiles js code and gives a fluent user experience
+- `Echo.channel()` allows us to subscribe to a websocket channel
+- `Echo.subscribed()` lets us to define a callback that will be triggered when we have successfully subscribed to a channel
+- We use `listen()` to listen to websocket events
+- We should use a `'.' prefix` when we want to listen to custom event in Echo.
 
 ## Broadcasting event and websocket channels:
 - If a client wants to subscribe to a websocket channel in laravel, the client will first perform a `'HTTP handshake'`, i.e. to authenticate the user before establishing a persisted websocket connection
