@@ -1,7 +1,7 @@
 import Echo from 'laravel-echo';
 import './bootstrap';
 import '../css/app.css'; 
-const form = document.getElementById('form');
+const form = document.getElementById('form');  
 const inputMessage = document.getElementById('input-message')
 const listMessage = document.getElementById('list-messages')
 form.addEventListener("submit", e=>{
@@ -16,7 +16,15 @@ form.addEventListener("submit", e=>{
     
     
 })
-const channel = window.Echo.channel('public.chat.1')
+/**
+ * public channel 
+ * */ 
+// const channel = window.Echo.channel('public.chat.1')
+
+/**
+ * private channel
+ */
+const channel = window.Echo.private('private.chat.1')
 channel.subscribed(()=>{
     console.log('subscribed');
 }).listen('.chat-message', e=>{

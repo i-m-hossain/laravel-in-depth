@@ -1,3 +1,14 @@
+## Laravel Whisper
+- Http is rather slow for real time application. It is quicker to communicate with the server through websocket connection.
+- Whisper() allows us to send events to each other without passing through Laravel server.
+- ListenToWhisper() listens to peer events in the channel
+
+## Private and Presence Channel:
+- Private and Presence channel will `only allow authenticated user to join in`. They use the `default auth guards` to authenticate users.
+- Presence channel keeps track of all the `subscribing client`s while private channel doesn't.
+- We use `Echo.private()` for private channels and `Echo.join()` for presence channels.
+- We need to define an `authorization callback` in channels.php for `private` and `presence channel`
+- Private channel auth callback should return `boolean`, while presence should return the `authenticated user` instance.
 ## Laravel Echo & WebSockets 
 -` Echo is the official client JS library` for us to subscribe and reeive websocket events from the server
 - Vite compiles js code and gives a fluent user experience
